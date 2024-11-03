@@ -1,0 +1,2 @@
+export const MAX_CHARACTER_CONSTANTS = 6;
+export const MAX_CHARACTER_LEVEL = 90;
