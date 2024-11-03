@@ -1,4 +1,4 @@
-export enum STATS_TYPES {
+export enum StatTypeEnum {
   CRIT_CHANCE = 'critChance',
   CRIT_DAMAGE = 'critDamage',
   ATTACK = 'attack',

@@ -8,6 +8,9 @@ import {
 export const createUserWeaponSchema = z.object({
   userId: z.number({ required_error: FieldErrorEnum.REQUIRED }).int(),
   weaponId: z.number({ required_error: FieldErrorEnum.REQUIRED }).int(),
+});
+
+export const updateUserWeaponSchema = z.object({
   constants: z
     .number({ required_error: FieldErrorEnum.REQUIRED })
     .int()

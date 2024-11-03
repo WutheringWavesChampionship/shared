@@ -1,4 +1,4 @@
-export enum WEAPON_TYPES {
+export enum WeaponTypeEnum {
   RECTIFIER = 'rectifier',
   BROAD_BLADE = 'broadBlade',
   SWORD = 'sword',

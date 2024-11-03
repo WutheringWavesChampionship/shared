@@ -3,7 +3,7 @@ import {
   ElementEnum,
   FieldErrorEnum,
   RarityEnum,
-  WEAPON_TYPES,
+  WeaponTypeEnum,
 } from '../constants';
 
 export const createCharacterSchema = z.object({
@@ -12,11 +12,11 @@ export const createCharacterSchema = z.object({
     .min(1, FieldErrorEnum.REQUIRED)
     .max(256, FieldErrorEnum.MAX_256),
   weaponType: z.enum([
-    WEAPON_TYPES.BROAD_BLADE,
-    WEAPON_TYPES.GAUNTLETS,
-    WEAPON_TYPES.PISTOLS,
-    WEAPON_TYPES.RECTIFIER,
-    WEAPON_TYPES.SWORD,
+    WeaponTypeEnum.BROAD_BLADE,
+    WeaponTypeEnum.GAUNTLETS,
+    WeaponTypeEnum.PISTOLS,
+    WeaponTypeEnum.RECTIFIER,
+    WeaponTypeEnum.SWORD,
   ]),
   element: z.enum([
     ElementEnum.AERO,

@@ -5,20 +5,51 @@ export enum API_ROUTES_ENUM {
   AUTH_REGISTRATION,
 
   ME,
+  ME_IS_ADMIN,
   MY_IMAGE,
+  MY_CHARACTERS,
+  MY_CHARACTERS_CURRENT,
+  MY_WEAPONS,
+  MY_WEAPONS_CURRENT,
 
   USER_CURRENT,
+  USER_CURRENT_CHARACTERS,
+  USER_CURRENT_WEAPONS,
   USER_CURRENT_IMAGE,
+
+  CHARACTERS_LIST,
+  CHARACTERS_CURRENT,
+  CHARACTERS_CURRENT_IMAGE,
+
+  WEAPONS_LIST,
+  WEAPONS_CURRENT,
+  WEAPONS_CURRENT_IMAGE,
 }
 
 export const API_ROUTES: Record<API_ROUTES_ENUM, string> = {
   [API_ROUTES_ENUM.IMAGE_CURRENT]: '/api/image/:id',
 
   [API_ROUTES_ENUM.USER_CURRENT]: '/api/user/:id',
+  [API_ROUTES_ENUM.USER_CURRENT_CHARACTERS]: '/api/user/:id/characters',
+  [API_ROUTES_ENUM.USER_CURRENT_WEAPONS]: '/api/user/:id/weapons',
   [API_ROUTES_ENUM.USER_CURRENT_IMAGE]: '/api/user/:id/image',
+
   [API_ROUTES_ENUM.ME]: '/api/me',
+  [API_ROUTES_ENUM.ME_IS_ADMIN]: '/api/me/is_admin',
   [API_ROUTES_ENUM.MY_IMAGE]: '/api/me/image',
+  [API_ROUTES_ENUM.MY_CHARACTERS]: '/api/me/characters',
+  [API_ROUTES_ENUM.MY_CHARACTERS_CURRENT]: '/api/me/characters/:id',
+  [API_ROUTES_ENUM.MY_WEAPONS]: '/api/me/weapons',
+  [API_ROUTES_ENUM.MY_WEAPONS_CURRENT]: '/api/me/weapons/:id',
 
   [API_ROUTES_ENUM.AUTH_LOGIN]: '/api/auth/login',
   [API_ROUTES_ENUM.AUTH_REGISTRATION]: '/api/auth/registration',
+
+  [API_ROUTES_ENUM.CHARACTERS_LIST]: '/api/characters',
+  [API_ROUTES_ENUM.CHARACTERS_CURRENT]: '/api/characters/:id',
+  [API_ROUTES_ENUM.CHARACTERS_CURRENT_IMAGE]: '/api/characters/:id/image',
+
+  [API_ROUTES_ENUM.WEAPONS_LIST]: '/api/weapons',
+  [API_ROUTES_ENUM.WEAPONS_CURRENT]: '/api/weapons/:id',
+  [API_ROUTES_ENUM.WEAPONS_CURRENT_IMAGE]: '/api/weapons/:id/image',
 };

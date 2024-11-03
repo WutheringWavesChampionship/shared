@@ -8,6 +8,9 @@ import {
 export const createUserCharacterSchema = z.object({
   userId: z.number({ required_error: FieldErrorEnum.REQUIRED }).int(),
   characterId: z.number({ required_error: FieldErrorEnum.REQUIRED }).int(),
+});
+
+export const updateUserCharacterSchema = z.object({
   constants: z
     .number({ required_error: FieldErrorEnum.REQUIRED })
     .int()
