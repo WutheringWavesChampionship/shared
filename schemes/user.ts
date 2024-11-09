@@ -1,4 +1,5 @@
 import { z } from 'zod';
+
 import { FieldErrorEnum } from '../constants';
 
 export const createUserSchema = z
@@ -20,7 +21,7 @@ export const createUserSchema = z
   })
   .refine(
     ({ password, telegram_id }) => {
-      !!password || !!telegram_id;
+      return !!password || !!telegram_id;
     },
     { message: FieldErrorEnum.REQUIRED, path: ['password'] },
   );

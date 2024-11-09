@@ -1,0 +1,69 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "plugins": ["import", "react", "react-hooks", "i18next"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": [
+      "error"
+    ],
+    "react/display-name": "off",
+    "import/default": "error",
+    "import/order": [
+      "error",
+      {
+       "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroups": [
+          {
+            "pattern": "*.scss",
+            "group": "type",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"]
+      }
+    ],
+    "i18next/no-literal-string": [
+      "error",
+      {
+          "markupOnly": true,
+          "ignoreAttribute": [
+              "as",
+              "role",
+              "data-testid",
+              "to",
+              "target",
+              "justify",
+              "align",
+              "border",
+              "direction",
+              "gap",
+              "feature",
+              "color",
+              "variant",
+              "size",
+              "wrap"
+          ]
+      }
+  ]
+  }
+}

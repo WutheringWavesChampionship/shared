@@ -1,4 +1,5 @@
 import { z } from 'zod';
+
 import { createUserWeaponSchema, updateUserWeaponSchema } from '../schemes';
 
 export type CreateUserWeaponType = z.infer<typeof createUserWeaponSchema>;

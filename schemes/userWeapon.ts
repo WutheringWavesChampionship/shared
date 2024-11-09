@@ -1,4 +1,5 @@
 import { z } from 'zod';
+
 import {
   FieldErrorEnum,
   MAX_WEAPON_CONSTANTS,
