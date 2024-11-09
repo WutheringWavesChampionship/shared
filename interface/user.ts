@@ -1,6 +1,7 @@
 import { z } from 'zod';
 
 import { createUserSchema, loginUserSchema } from '../schemes';
+
 import { IBaseEntity } from './baseEntity';
 
 export type CreateUserType = z.infer<typeof createUserSchema>;
