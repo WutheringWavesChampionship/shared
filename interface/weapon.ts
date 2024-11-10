@@ -4,4 +4,8 @@ import { IBaseEntity } from './baseEntity';
 
 export type CreateWeaponType = z.infer<typeof createWeaponSchema>;
 
-export type WeaponType = CreateWeaponType & IBaseEntity;
+export type WeaponType = CreateWeaponType &
+  IBaseEntity & {
+    imageId?: number;
+    image?: string;
+  };

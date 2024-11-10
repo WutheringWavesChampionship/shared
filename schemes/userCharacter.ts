@@ -14,13 +14,12 @@ export const updateUserCharacterSchema = z.object({
   constants: z
     .number({ required_error: FieldErrorEnum.REQUIRED })
     .int()
-    .positive()
+    .min(0)
     .max(MAX_CHARACTER_CONSTANTS),
   level: z
     .number({ required_error: FieldErrorEnum.REQUIRED })
     .int()
     .positive()
-    .min(1)
     .max(MAX_CHARACTER_LEVEL),
-  critValue: z.number().positive().optional(),
+  critValue: z.number().positive().optional().nullable(),
 });

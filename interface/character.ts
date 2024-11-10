@@ -4,4 +4,8 @@ import { IBaseEntity } from './baseEntity';
 
 export type CreateCharacterType = z.infer<typeof createCharacterSchema>;
 
-export type CharacterType = CreateCharacterType & IBaseEntity;
+export type CharacterType = CreateCharacterType &
+  IBaseEntity & {
+    imageId?: number;
+    image?: string;
+  };
