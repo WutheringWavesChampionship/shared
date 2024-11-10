@@ -1,7 +1,5 @@
 import { z } from 'zod';
-
 import { createUserWeaponSchema, updateUserWeaponSchema } from '../schemes';
-
 import { IBaseEntity } from './baseEntity';
 import { WeaponType } from './weapon';
 

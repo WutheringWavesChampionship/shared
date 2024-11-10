@@ -1,10 +1,8 @@
 import { z } from 'zod';
-
 import {
   createUserCharacterSchema,
   updateUserCharacterSchema,
 } from '../schemes';
-
 import { IBaseEntity } from './baseEntity';
 import { CharacterType } from './character';
 

@@ -1,5 +1,4 @@
 import { z } from 'zod';
-
 import { FieldErrorEnum } from '../constants';
 
 export const createImageSchema = z.object({
