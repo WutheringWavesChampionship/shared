@@ -4,6 +4,7 @@ export const IMAGE_TYPES = {
   'image/png': ['.png'],
   'image/jpg': ['.jpg'],
   'image/jpeg': ['.jpeg'],
+  'image/webp': ['.webp'],
 };
 
 export const MAX_IMAGE_SIZE = 4 * ONE_MB_IN_BYTES;
